@@ -1,71 +1,91 @@
-# Sales Analysis and Forecasting Project
+# Advanced Sales Analytics and Prediction Project
 
-This project analyzes customer sales data to predict churn and forecast demand. It aims to provide actionable insights for optimizing marketing, customer retention, and inventory management strategies.
+This project dives deep into customer sales data to provide comprehensive insights and actionable recommendations. It combines various data analysis techniques to address critical business challenges in customer retention, demand forecasting, and product recommendations.
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Data](#data)
-- [Models and Analyses](#models-and-analyses)
-- [Results and Insights](#results-and-insights)
-- [Usage](#usage)
-- [Limitations and Future Work](#limitations-and-future-work)
-- [Contributors](#contributors)
+1. Project Overview
+2. Data
+3. Models and Analyses
+    * Churn Prediction (XGBoost)
+    * Demand Forecasting (Prophet)
+    * Customer Segmentation (K-Means Clustering)
+    * Customer Lifetime Value (BG/NBD)
+    * Association Rule Mining (Apriori)
+4. Results and Insights
+5. Usage
+6. Limitations and Future Work
+7. Contributors
 
-## Project Overview
+## 1. Project Overview
 
-This project tackles two key challenges faced by businesses:
+This project goes beyond basic analysis and aims to provide a holistic view of customer behavior, product performance, and future trends. It leverages machine learning, time series forecasting, and association rule mining to generate actionable insights for:
 
-* **Customer Churn Prediction:**  Identify customers likely to churn using an XGBoost model based on their past purchase behavior and additional features.
-* **Demand Forecasting:**  Predict the demand for products using the Prophet time series forecasting model. This helps with inventory management and resource allocation.
+* **Customer Retention:** Identifying high-risk customers for churn.
+* **Demand Optimization:** Forecasting product demand accurately.
+* **Customer Segmentation:** Understanding distinct customer groups.
+* **Customer Lifetime Value (CLV):** Estimating the long-term value of each customer.
+* **Product Recommendations:** Suggesting relevant products to customers.
 
-## Data
+## 2. Data
 
-The project uses the following data:
+* `data_cleaned.csv`: The cleaned and preprocessed sales data, including:
+    * Customer ID, Order ID, Date of Purchase, Quantity, Total Price, Product Details (ID, Name, Category, Subcategory, Range)
+* Additional data sources could include (if available):
+    * Customer demographics
+    * Website interaction data
+    * Product reviews
 
-* `data_cleaned.csv`: The cleaned and preprocessed sales data, including information about customer transactions (IDs, dates, amounts, products purchased, etc.).
-
-## Models and Analyses
+## 3. Models and Analyses
 
 * **Churn Prediction:**
-    * **Model:** XGBoost classifier.
-    * **Features:** Total orders, average order value, recency, frequency, change in purchase frequency, etc.
-    * **Evaluation:**  Accuracy, precision, recall, F1-score, ROC-AUC, SHAP values for interpretability.
+    * **Model:** XGBoost Classifier (potentially tuned using GridSearchCV)
+    * **Features:** 
+        * Transactional data (order history, recency, frequency, monetary value)
+        * Additional Features (RFM scores, time since first purchase, change in purchase frequency)
+    * **Evaluation:**  Accuracy, Precision, Recall, F1-score, ROC-AUC, SHAP values for feature importance analysis.
 
 * **Demand Forecasting:**
-    * **Model:** Facebook Prophet.
-    * **Features:** Date, quantity sold.
-    * **Optional:** External regressors like promotions, holidays, or other factors influencing demand.
-    * **Evaluation:** MAE, MAPE, RMSE, visual inspection, backtesting.
+    * **Model:** Facebook Prophet
+    * **Features:**  Date, quantity sold
+    * **Optional:** External regressors (holidays, promotions, etc.)
+    * **Evaluation:**  MAE, MAPE, RMSE, visual inspection, backtesting.
 
-## Results and Insights (Summarize your key findings here)
+* **Customer Segmentation:**
+    * **Model:** K-Means Clustering
+    * **Features:**  Selected subset from the aggregated customer data
+    * **Evaluation:** Silhouette Analysis, Elbow method to determine optimal cluster number
 
-* Briefly describe the most significant insights you gained from your churn prediction and demand forecasting models.
-* Highlight any patterns, trends, or surprises that you discovered.
-* Mention how these insights can be used to improve business decisions.
+* **Customer Lifetime Value (CLV):**
+    * **Model:** Beta Geometric / Negative Binomial Distribution (BG/NBD)
+    * **Features:**  Frequency, recency, and customer age (T)
+    * **Evaluation:** Holdout validation using a testing set.
 
-## Usage
+* **Association Rule Mining (Apriori):**
+    * **Model:** Apriori algorithm
+    * **Goal:** Discover relationships between products frequently purchased together
+    * **Metrics:** Support, confidence, lift.
 
-1. **Install Requirements:** `pip install pandas numpy scikit-learn xgboost prophet lifetimes plotly ipywidgets`
-2. **Data Preparation:** Ensure your data is in a similar format to `data_cleaned.csv`.
-3. **Run the Notebooks:**
-    * Execute `churn_prediction.ipynb` to train and evaluate the churn prediction model.
-    * Execute `demand_forecasting.ipynb` to generate demand forecasts for different products.
-4. **Explore Results:**
-    * Examine the visualizations generated by each model.
-    * Analyze the evaluation metrics to understand model performance.
-    * Use the SHAP plots to interpret feature importance in the churn model.
 
-## Limitations and Future Work
+## 4. Results and Insights
 
-* **Data Limitations:**  List any limitations in your data (e.g., missing values, limited time range) that might affect the accuracy of your models.
-* **Model Assumptions:** Briefly discuss the assumptions made by the Prophet and XGBoost models.
-* **Potential Improvements:** Suggest areas for future work, such as:
-    * Incorporating additional features.
-    * Exploring different model architectures.
-    * Integrating the models with other systems or dashboards.
+[Summarize your findings here. For example:]
 
-## Contributors
+* We identified 2 distinct customer segments. 
+* High-value customers are characterized by [characteristics].
+* Top-selling products are [list of products].
+* We achieved [accuracy metrics] for churn prediction and [error metrics] for demand forecasting.
+* Association rule mining revealed the following interesting product bundles [list some examples].
 
-* Your Name
-* (Add any other collaborators or sources you used)
+## 5. Usage
+
+Detailed instructions on how to run the different analyses and models within the provided Jupyter Notebooks.
+
+## 6. Limitations and Future Work
+
+[Discuss any limitations of the current models, assumptions made, and potential improvements, such as incorporating new data sources or experimenting with different algorithms.]
+
+## 7. Contributors
+
+* [Your Name]
+* [Mention any other collaborators or sources you used]
