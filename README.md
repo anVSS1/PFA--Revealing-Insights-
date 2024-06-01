@@ -87,5 +87,4 @@ Detailed instructions on how to run the different analyses and models within the
 
 ## 7. Contributors
 
-* [Your Name]
-* [Mention any other collaborators or sources you used]
+* Anass Ouzaouit
