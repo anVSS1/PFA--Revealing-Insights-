@@ -45,7 +45,6 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
 * **Model:** Facebook Prophet
 * **Data:** Aggregated daily (or other frequency) sales data.
 * **Optional:** External regressors (holidays, promotions, etc.).
-* **Evaluation:** MAE, MAPE, RMSE, visual comparison to actuals, backtesting.
 
 ### Customer Segmentation
 
