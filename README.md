@@ -71,5 +71,6 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
 4. **Apply Insights:** Translate findings into actionable recommendations for your business.
 
 ## Limitations and Future Work
-
-[Discuss data limitations, model assumptions, and potential improvements, such as incorporating new features, experimenting with different models, or integrating with other systems.] 
+* **Explore more models**
+* **Adding holidays, promotions etc. data to the demande forecast**
+* **Adding more vizualisatitons in the Power BI Dashboard**
