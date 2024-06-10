@@ -22,6 +22,7 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
 ## Data
 
 * **`data_cleaned.csv`:**  Cleaned dataset containing transaction-level information (customer ID, order ID, date, quantity, total price, product details).
+* You can download the data file from here: https://drive.google.com/file/d/10JEt8sq1NEhuv5AI7FDAmufsCy0qhVYC/view?usp=drive_link 
 * **Other Potential Data (Optional):**
     * Customer demographics
     * Product attributes 
