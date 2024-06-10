@@ -1,6 +1,6 @@
 # Sales Analytics and Prediction Project
 
-This project dives deep into customer sales data to uncover valuable insights for business decision-making. It leverages machine learning and time-series forecasting to predict customer churn, forecast product demand, and segment customers based on their purchasing behavior.
+This project dives deep into customer sales data to uncover valuable insights for business decision-making. It leverages machine learning and time-series forecasting to predict customer churn,customer lifetime value (CLV) prediction, forecast product demand, and segment customers based on their purchasing behavior.
 
 ## Table of Contents
 
