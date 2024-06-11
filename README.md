@@ -23,7 +23,7 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
 ## Data
 
 * **`data_cleaned.csv`:**  Cleaned dataset containing transaction-level information (customer ID, order ID, date, quantity, total price, product details).
-**Data Source:** You can download the data file from here: https://drive.google.com/file/d/10JEt8sq1NEhuv5AI7FDAmufsCy0qhVYC/view?usp=drive_link
+* **Data Source:** You can download the data file from here: https://drive.google.com/file/d/10JEt8sq1NEhuv5AI7FDAmufsCy0qhVYC/view?usp=drive_link
   
 ## Models and Analyses
 
@@ -78,7 +78,7 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
       * **Interactive Map:** Exploration of customer locations.
       * **Timeline/Table:** First and last order dates for each customer.
         
-      2. **Churn Insights:**
+  2. **Churn Insights:**
       * **Pie Chart:** Proportion of churned vs. not churned customers.
       * **Table:** Detailed customer data, including churn predictions.
      
