@@ -7,6 +7,7 @@ This project dives deep into customer sales data to uncover valuable insights fo
 - [Project Overview](#project-overview)
 - [Data](#data)
 - [Models and Analyses](#models-and-analyses)
+- [Power BI Dashboard](#power-bi-dashboard) 
 - [Usage](#usage)
 - [Limitations and Future Work](#limitations-and-future-work)
 
@@ -22,13 +23,8 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
 ## Data
 
 * **`data_cleaned.csv`:**  Cleaned dataset containing transaction-level information (customer ID, order ID, date, quantity, total price, product details).
-* You can download the data file from here: https://drive.google.com/file/d/10JEt8sq1NEhuv5AI7FDAmufsCy0qhVYC/view?usp=drive_link 
-* **Other Potential Data (Optional):**
-    * Customer demographics
-    * Product attributes 
-    * Web browsing data
-    * Support tickets
-
+**Data Source:** You can download the data file from here: https://drive.google.com/file/d/10JEt8sq1NEhuv5AI7FDAmufsCy0qhVYC/view?usp=drive_link
+  
 ## Models and Analyses
 
 ### Churn Prediction
@@ -59,6 +55,39 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
 * **Features:** Recency, frequency, monetary value of transactions
 * **Output:** Predicted CLV for each customer over a 12-month period.
 
+## Power BI Dashboard
+**This interactive dashboard provides a user-friendly way to explore and visualize the key insights from your sales data analysis. It's organized into three main sections, offering a holistic view of customer behavior, product performance, and overall sales trends.**
+
+### **Sales Report**
+   1. **Revenue Analysis:**
+      * **Map:** Geographic distribution of sales figures by city.
+      * **Animation:** Evolution of customer segments based on total spending.
+      * **Line Chart:** Total sales trend over time, broken down by month and year.
+      * **Table:** Detailed sales data for each city, with summaries by family, range, and order counts.
+
+   2. **Product Insights:**
+      * **Cards:** Top-selling products, sub-families, and ranges.
+      * **Table:** Granular order data, including product counts and order values.
+      * **Pie Chart:** Distribution of orders by day of the week.
+
+### **Clients Analysis**
+   1. **Customer Overview:**
+      * **Card:** Number of customers
+      * **Card:** City with the most customers
+      * **Histogram:** Customer count by city
+      * **Interactive Map:** Exploration of customer locations.
+      * **Timeline/Table:** First and last order dates for each customer.
+        
+      2. **Churn Insights:**
+      * **Pie Chart:** Proportion of churned vs. not churned customers.
+      * **Table:** Detailed customer data, including churn predictions.
+     
+### **Products Analysis**
+   1. **Product Overview:**
+      * **Cards:** Number of products and unique ranges.
+      * **Interactive Map:** Sales by city and product.
+      * **Table:** Product details with associated range, order counts, and total quantity sold.
+
 ## Usage
 
 1. **Install Packages:**  `pip install pandas numpy scikit-learn xgboost prophet lifetimes plotly ipywidgets`
@@ -72,6 +101,10 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
 4. **Apply Insights:** Translate findings into actionable recommendations for your business.
 
 ## Limitations and Future Work
-* **Explore more models**
-* **Adding holidays, promotions etc. data to the demande forecast**
-* **Adding more vizualisatitons in the Power BI Dashboard**
+*   **Explore Additional Models:**  Experiment with alternative algorithms for churn prediction and demand forecasting.
+*   **Incorporate External Data:**  Enhance demand forecasts by including data on promotions, holidays, and other relevant factors.
+*   **Expand Dashboard:** Add more visualizations and interactivity to the Power BI dashboard.
+
+
+Feel free to customize this even further and add more details as needed! 
+
