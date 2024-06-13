@@ -104,7 +104,3 @@ This repository contains Jupyter Notebooks and Python scripts for comprehensive 
 *   **Explore Additional Models:**  Experiment with alternative algorithms for churn prediction and demand forecasting.
 *   **Incorporate External Data:**  Enhance demand forecasts by including data on promotions, holidays, and other relevant factors.
 *   **Expand Dashboard:** Add more visualizations and interactivity to the Power BI dashboard.
-
-
-Feel free to customize this even further and add more details as needed! 
-
